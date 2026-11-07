@@ -1,0 +1,23 @@
+# Secretos y configuración local
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.secret
+*.token
+# Datos, respaldos y artefactos locales: no son documentación
+*.dump
+*.sql.gz
+*.sqlite
+*.sqlite3
+*.db
+*.bak
+*.log
+node_modules/
+__pycache__/
+.venv/
+.cache/
+.DS_Store
+# Evidencias completas de consulta se conservan fuera del repositorio
+.local-evidence/

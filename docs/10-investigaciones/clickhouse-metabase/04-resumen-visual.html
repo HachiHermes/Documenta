@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Documenta · ClickHouse y Metabase · Decisión tecnológica</title>
+<style>
+:root{--paper:#f6f2e9;--ink:#252823;--muted:#555c50;--line:#bfc3b7;--accent:#215a45;--white:#fffdf8}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.6 Georgia,'Times New Roman',serif}header,main,footer{max-width:1080px;margin:auto;padding:32px 30px}header{border-bottom:2px solid var(--ink);padding-top:54px}.eyebrow,nav,dt,th,.label{font:700 13px/1.5 Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase}.eyebrow{color:var(--accent)}h1{font-size:clamp(36px,6vw,66px);line-height:1.1;max-width:900px;margin:20px 0}h2{font-size:30px;line-height:1.2;margin:0 0 20px}h3{font-size:22px}p{max-width:850px}.lead{font-size:23px;max-width:850px}a{color:var(--accent);text-underline-offset:4px}a:focus-visible{outline:3px solid var(--accent);outline-offset:4px}nav{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:28px}nav a{min-height:44px;display:inline-flex;align-items:center}section{padding:38px 0;border-bottom:1px solid var(--line)}.status{display:inline-block;padding:6px 10px;background:var(--ink);color:var(--white);font:700 14px Arial,sans-serif}dl{display:grid;grid-template-columns:minmax(130px,1fr) 3fr;gap:14px 28px}dt,dd{margin:0;padding-bottom:14px;border-bottom:1px solid var(--line)}dt{padding-top:5px}.flow{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:28px 0}.node{padding:14px 18px;background:var(--white);border:1px solid var(--line);max-width:100%}.arrow{font-size:25px;color:var(--accent)}.note{font-size:16px;color:var(--muted)}.table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:17px}th,td{text-align:left;vertical-align:top;padding:16px 12px;border-bottom:1px solid var(--line)}th{padding-top:0}ol,ul{padding-left:24px}li{margin:10px 0}footer{font-size:16px;color:var(--muted);padding-bottom:52px}.choice{font-size:25px;color:var(--accent);font-weight:bold}small{font-size:15px}@media(max-width:600px){header,main,footer{padding-left:20px;padding-right:20px}header{padding-top:32px}dl{grid-template-columns:1fr;gap:0}dt{border:0;padding:10px 0 0}dd{padding-bottom:16px}.flow{display:block}.node{margin:8px 0}.arrow{display:block;text-align:center;transform:rotate(90deg)}th,td{padding:12px 8px}.lead{font-size:21px}}@media print{body{background:white;font-size:12pt}nav{display:none}header,main,footer{padding:15px 0}section{break-inside:avoid}h1{font-size:30pt}a{color:inherit}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+<div class="eyebrow">Documenta / Expediente TEC-2026-001 / 7 noviembre 2026</div>
+<h1>Operar, analizar y visualizar son trabajos distintos.</h1>
+<p class="lead">Metabase es candidato a un piloto de informes internos. ClickHouse queda reservado para una necesidad analítica demostrada.</p>
+<p><span class="status">Investigación documental · Sin despliegue</span></p>
+<nav aria-label="Secciones"><a href="#papeles">Papeles</a><a href="#arquitectura">Arquitectura</a><a href="#proyectos">Proyectos</a><a href="#riesgos">Condiciones</a><a href="#decision">Próxima decisión</a></nav>
+</header>
+<main>
+<section id="papeles"><h2>01 / Qué aporta cada pieza</h2>
+<dl><dt>Base operativa</dt><dd>Guarda contenidos, permisos y cambios de negocio. PostgreSQL es el candidato propuesto, no una instalación confirmada.</dd><dt>ClickHouse</dt><dd>Base analítica para agregaciones e históricos. No se recomienda como sustituto automático de la base operativa.</dd><dt>Metabase</dt><dd>Consulta fuentes y presenta informes. No sustituye al backend, al recolector de fuentes ni a la revisión editorial.</dd><dt>Documenta</dt><dd>Conserva investigaciones, fuentes y decisiones. No almacena los datos personales ni los archivos de producción.</dd></dl>
+<p class="note">Capacidades y límites documentados en el <a href="01-investigacion.md">informe completo</a>, con referencias numeradas.</p>
+</section>
+<section id="arquitectura"><h2>02 / La opción inicial más sencilla</h2>
+<div class="flow" aria-label="Fuentes autorizadas, validación, base operativa y Metabase"><div class="node">Fuentes autorizadas</div><span class="arrow" aria-hidden="true">→</span><div class="node">Validación y procedencia</div><span class="arrow" aria-hidden="true">→</span><div class="node">Base operativa</div><span class="arrow" aria-hidden="true">→</span><div class="node">Metabase</div></div>
+<p>Metabase necesita además su propia base de aplicación persistente. Los documentos y audios permanecen en un almacén adecuado, enlazados por metadatos.</p>
+<p><strong>Solo después de medir:</strong> base operativa → lotes o CDC aprobado → ClickHouse → Metabase. La aplicación debe seguir funcionando si falla la capa analítica.</p>
+<p class="note">Ambos esquemas son propuestas; no describen una arquitectura ya instalada.</p>
+</section>
+<section id="proyectos"><h2>03 / Un caso útil antes de elegir infraestructura</h2>
+<div class="table-wrap"><table><thead><tr><th scope="col">Proyecto</th><th scope="col">Primer caso propuesto</th><th scope="col">Recomendación</th></tr></thead><tbody><tr><th scope="row">Arte Stampa</th><td>Cobertura de relatos autorizados, transcripciones y actividad agregada por evento.</td><td>Evaluar panel interno. Posponer ClickHouse.</td></tr><tr><th scope="row">MapStories</th><td>Cobertura editorial por ruta y reproducciones consentidas, sin trayectorias precisas por defecto.</td><td>Panel candidato. Analítica especializada solo con carga medida.</td></tr><tr><th scope="row">lacajaambar</th><td>Inventario de fuentes, permisos y revisiones, si hay datos tabulares útiles.</td><td>Biblioteca primero; BI condicional.</td></tr></tbody></table></div>
+<p class="note">No son indicadores existentes ni resultados medidos. Los repositorios de cada proyecto siguen siendo las referencias canónicas.</p>
+</section>
+<section id="riesgos"><h2>04 / Las condiciones que pueden cambiar la elección</h2>
+<ul><li><strong>Permisos:</strong> la seguridad por filas y columnas de Metabase requiere Pro/Enterprise. Colecciones y filtros no acreditan aislamiento de datos.</li><li><strong>Coste:</strong> licencia, servidores, backups, transferencia y CDC deben presupuestarse por separado. “Open source” no significa operación gratuita.</li><li><strong>Privacidad:</strong> minimizar antes de recoger y replicar; definir retención y supresión también en derivados y backups.</li><li><strong>Recursos:</strong> no se ha comprobado capacidad libre del servidor. No desplegar todas las piezas por defecto.</li><li><strong>Continuidad:</strong> restaurar y probar permisos antes de usar datos reales. Mantener los secretos fuera de GitHub.</li></ul>
+<p>Las tarifas y las ediciones consultadas están detalladas en el informe. Deben revisarse antes de contratar; no son una oferta ni un presupuesto del proyecto.</p>
+</section>
+<section id="decision"><h2>05 / Qué decidir ahora</h2><p class="choice">Aprobar una prueba acotada, no una plataforma completa.</p>
+<ol><li>Elegir un indicador y una decisión concreta por proyecto.</li><li>Confirmar fuente autorizada, quién lo verá, frecuencia y presupuesto.</li><li>Probar una capa de lectura mínima sobre datos sintéticos identificados y luego una muestra autorizada.</li><li>Medir integridad, permisos, utilidad, latencia, coste y restauración.</li><li>Reconsiderar ClickHouse solo si el baseline muestra una limitación real.</li></ol>
+<p><a href="02-piloto-y-aceptacion.md">Protocolo y aceptación</a> · <a href="../../20-decisiones/ADR-001-capa-analitica-propuesta.md">ADR-001, pendiente de aprobación</a> · <a href="03-fuentes.md">Fuentes consultadas</a></p>
+</section>
+</main>
+<footer>Versión 1.0 · Revisión profesional pendiente cuando corresponda. No se han probado conexiones, rendimiento o seguridad efectiva. Este HTML es una síntesis; el informe conserva el detalle y las fuentes. Para verlo desde GitHub, descargarlo y abrirlo localmente: el repositorio no lo ejecuta.</footer>
+</body></html>
