@@ -5,6 +5,8 @@ Infraestructura documental para descubrir y evaluar herramientas antes de incorp
 ## Empezar aquí
 
 - [Catálogo documental](docs/00-biblioteca/catalogo.md): inventario, clasificación y estados.
+- [Investigación: AI Factory con agentes](docs/10-investigaciones/ai-factory-agentes/01-investigacion.md): análisis crítico del vídeo, evaluación del resumen, contraste de afirmaciones y piloto recomendado.
+- [Fuentes del análisis AI Factory](docs/10-investigaciones/ai-factory-agentes/02-fuentes.md): evidencia, limitaciones y matriz de afirmaciones.
 - [Investigación: ClickHouse y Metabase](docs/10-investigaciones/clickhouse-metabase/01-investigacion.md): capacidades, viabilidad, costes, privacidad y arquitectura propuesta.
 - [Resumen visual](docs/10-investigaciones/clickhouse-metabase/04-resumen-visual.html): descargar y abrir en un navegador; GitHub muestra el código, no lo ejecuta.
 - [Piloto y criterios de aceptación](docs/10-investigaciones/clickhouse-metabase/02-piloto-y-aceptacion.md): propuesta, no prueba ejecutada.

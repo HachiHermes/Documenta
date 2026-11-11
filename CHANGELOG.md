@@ -1,5 +1,14 @@
 # Historial documental
 
+## 1.1 · 2026-11-11
+
+- Añadido TEC-2026-002: análisis exhaustivo y transformativo del vídeo sobre AI Factories de Eric Risco.
+- Evaluado el resumen aportado: correcto en dirección, pero insuficiente para representar la arquitectura, los controles y los riesgos descritos.
+- Contrastadas con fuentes originales las afirmaciones sobre OpenAI y Stripe; documentados matices y límites.
+- Separadas evidencia, inferencia, riesgos, correspondencias con Hermes y capacidades aún no implementadas.
+- Recomendado un piloto documental de bajo riesgo con PR y aprobación humana; no se ha instalado software ni autorizado automatización de producción.
+- Actualizados README y catálogo. No se ha eliminado ni movido contenido del fondo histórico.
+
 ## 1.0 · 2026-11-07
 
 - Ampliado README como entrada de biblioteca, conservando el flujo descubrir → evaluar → probar → medir → integrar.

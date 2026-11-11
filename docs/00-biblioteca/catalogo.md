@@ -1,6 +1,6 @@
 # Catálogo documental
 
-Actualizado: 2026-11-07 · v1.0. Los estados de investigación no equivalen a adopción aprobada.
+Actualizado: 2026-11-11 · v1.1. Los estados de investigación no equivalen a adopción aprobada.
 
 ## Expedientes y gobierno
 
@@ -10,6 +10,8 @@ Actualizado: 2026-11-07 · v1.0. Los estados de investigación no equivalen a ad
 | TEC-2026-001-P | [Piloto y aceptación](../10-investigaciones/clickhouse-metabase/02-piloto-y-aceptacion.md) | Protocolo | Propuesto; no ejecutado | Integridad, permisos, coste, recuperación |
 | TEC-2026-001-F | [Fuentes](../10-investigaciones/clickhouse-metabase/03-fuentes.md) | Registro de evidencia | Consultado el 2026-11-07 | Documentación oficial y contexto de repositorios |
 | TEC-2026-001-V | [Resumen visual](../10-investigaciones/clickhouse-metabase/04-resumen-visual.html) | Síntesis HTML | Informativo; descargar para visualizar | Decisión y aprendizaje |
+| TEC-2026-002 | [AI Factory con agentes](../10-investigaciones/ai-factory-agentes/01-investigacion.md) | Investigación y análisis audiovisual | Investigado; piloto documental recomendado | Hermes, Documenta · agentes, trazabilidad, riesgo |
+| TEC-2026-002-F | [Fuentes del análisis AI Factory](../10-investigaciones/ai-factory-agentes/02-fuentes.md) | Registro de evidencia | Consultado el 2026-11-11 | Vídeo, repositorio y fuentes corporativas originales |
 | ADR-001 | [Separar operación, analítica y visualización](../20-decisiones/ADR-001-capa-analitica-propuesta.md) | Decisión de arquitectura | Propuesta; no aprobada | Complejidad progresiva |
 | REF-PROY-001 | [Referencias de proyectos](../30-proyectos/referencias.md) | Guía de referencias | Contexto parcial, no auditoría | Documentos canónicos externos |
 | BIB-001 | [Organización](organizacion.md) | Política documental | Aplicada en esta reorganización | Clasificación y conservación |
