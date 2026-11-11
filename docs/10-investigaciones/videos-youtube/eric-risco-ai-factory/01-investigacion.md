@@ -1,6 +1,12 @@
-# TEC-2026-002 · AI Factory con agentes: análisis crítico del vídeo de Eric Risco
+# YT-2026-001 / TEC-2026-002 · AI Factory con agentes: análisis crítico del vídeo de Eric Risco
 
-- **Fecha y versión:** 2026-11-11 · v1.0
+- **Tipo de entrada:** vídeo de YouTube analizado
+- **ID de videoteca:** YT-2026-001
+- **Título del vídeo:** *Programar con agentes ya no basta: monta tu Software Factory*
+- **Autor / canal:** Eric Risco · Eric Risco | Inteligencia Artificial
+- **URL de acceso:** <https://www.youtube.com/watch?v=p6nnqerea7w&t=51s>
+- **Fecha de consulta:** 2026-11-11
+- **Fecha y versión del informe:** 2026-11-11 · v1.1
 - **Estado:** investigado; no autoriza instalación ni automatización de producción
 - **Responsable de aprobación:** pendiente de designación
 - **Ámbito:** Hermes, Documenta y posibles flujos de los proyectos; no modifica ningún producto

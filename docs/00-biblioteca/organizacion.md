@@ -10,6 +10,7 @@ Se conserva el flujo original: **Descubrir → Evaluar seguridad, privacidad y d
 ## Clasificación
 - `docs/00-biblioteca/`: catálogo, normas y plantillas.
 - `docs/10-investigaciones/<tema>/`: expedientes tecnológicos; cada expediente reúne informe, fuentes, prueba propuesta y resumen visual.
+- `docs/10-investigaciones/videos-youtube/`: videoteca e índice único de análisis cuyo material de partida es un vídeo de YouTube; cada registro incluye autor/canal y URL.
 - `docs/20-decisiones/`: decisiones propuestas y posteriormente aceptadas/rechazadas con responsable y motivo.
 - `docs/30-proyectos/`: referencias al contexto canónico y aplicaciones posibles, sin copiar proyectos.
 - `ProyectosGitHub/` y documentos de raíz anteriores: fondo existente conservado en su ubicación original. La pertenencia al fondo no acredita vigencia ni seguridad de su contenido.

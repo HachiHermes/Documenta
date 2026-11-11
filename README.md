@@ -5,8 +5,9 @@ Infraestructura documental para descubrir y evaluar herramientas antes de incorp
 ## Empezar aquí
 
 - [Catálogo documental](docs/00-biblioteca/catalogo.md): inventario, clasificación y estados.
-- [Investigación: AI Factory con agentes](docs/10-investigaciones/ai-factory-agentes/01-investigacion.md): análisis crítico del vídeo, evaluación del resumen, contraste de afirmaciones y piloto recomendado.
-- [Fuentes del análisis AI Factory](docs/10-investigaciones/ai-factory-agentes/02-fuentes.md): evidencia, limitaciones y matriz de afirmaciones.
+- [Videoteca de YouTube](docs/10-investigaciones/videos-youtube/README.md): índice único por vídeo, autor, URL y análisis.
+- [Vídeo: AI Factory con agentes, de Eric Risco](docs/10-investigaciones/videos-youtube/eric-risco-ai-factory/01-investigacion.md): análisis crítico, evaluación del resumen, contraste de afirmaciones y piloto recomendado.
+- [Fuentes del análisis del vídeo](docs/10-investigaciones/videos-youtube/eric-risco-ai-factory/02-fuentes.md): evidencia, limitaciones y matriz de afirmaciones.
 - [Investigación: ClickHouse y Metabase](docs/10-investigaciones/clickhouse-metabase/01-investigacion.md): capacidades, viabilidad, costes, privacidad y arquitectura propuesta.
 - [Resumen visual](docs/10-investigaciones/clickhouse-metabase/04-resumen-visual.html): descargar y abrir en un navegador; GitHub muestra el código, no lo ejecuta.
 - [Piloto y criterios de aceptación](docs/10-investigaciones/clickhouse-metabase/02-piloto-y-aceptacion.md): propuesta, no prueba ejecutada.
@@ -26,6 +27,7 @@ El flujo evita instalar por entusiasmo: cada incorporación debe superar segurid
 |---|---|
 | `docs/00-biblioteca/` | Catálogo, normas y plantilla |
 | `docs/10-investigaciones/` | Expedientes tecnológicos y fuentes |
+| `docs/10-investigaciones/videos-youtube/` | Videoteca: índice por título, autor/canal, URL y análisis |
 | `docs/20-decisiones/` | Propuestas, decisiones y condiciones de revisión |
 | `docs/30-proyectos/` | Enlaces al contexto canónico, sin duplicación completa |
 | `ProyectosGitHub/` y archivos históricos de raíz | Fondo anterior conservado; no auditado por este trabajo |

@@ -1,5 +1,11 @@
 # Historial documental
 
+## 1.2 · 2026-11-11
+
+- Añadida una videoteca única en `docs/10-investigaciones/videos-youtube/` para localizar análisis por título, autor/canal y URL.
+- Registrado el análisis de AI Factory como `YT-2026-001`, vídeo de YouTube de Eric Risco, con enlace directo de acceso.
+- Reubicados informe y fuentes bajo la videoteca; actualizados README y catálogo sin duplicar documentos.
+
 ## 1.1 · 2026-11-11
 
 - Añadido TEC-2026-002: análisis exhaustivo y transformativo del vídeo sobre AI Factories de Eric Risco.

@@ -1,8 +1,12 @@
-# TEC-2026-002-F · Fuentes y trazabilidad
+# YT-2026-001-F / TEC-2026-002-F · Fuentes y trazabilidad
 
+- **Tipo de entrada:** vídeo de YouTube analizado
+- **ID de videoteca:** YT-2026-001
+- **Vídeo:** *Programar con agentes ya no basta: monta tu Software Factory*
+- **Autor / canal:** Eric Risco · Eric Risco | Inteligencia Artificial
+- **URL de acceso:** <https://www.youtube.com/watch?v=p6nnqerea7w&t=51s>
 - **Fecha de consulta:** 2026-11-11
 - **Estado:** fuentes primarias consultadas; sin instalación ni auditoría del sistema del autor
-- **Ámbito:** análisis del vídeo “Programar con agentes ya no basta: monta tu Software Factory”
 
 ## Criterio de evidencia
 
