@@ -8,7 +8,7 @@
 
 | ID | Vídeo | Autor / canal | URL de acceso | Fecha de consulta | Análisis |
 |---|---|---|---|---|---|
-| YT-2026-001 / TEC-2026-002 | *Programar con agentes ya no basta: monta tu Software Factory* | Eric Risco · Eric Risco \| Inteligencia Artificial | [Abrir en YouTube](https://www.youtube.com/watch?v=p6nnqerea7w&t=51s) | 2026-11-11 | [Informe exhaustivo](eric-risco-ai-factory/01-investigacion.md) · [Fuentes](eric-risco-ai-factory/02-fuentes.md) |
+| YT-2026-001 / TEC-2026-002 | *Programar con agentes ya no basta: monta tu Software Factory* | Eric Risco · Inteligencia Artificial | [Abrir en YouTube](https://www.youtube.com/watch?v=p6nnqerea7w&t=51s) | 2026-11-11 | [Informe exhaustivo](eric-risco-ai-factory/01-investigacion.md) · [Fuentes](eric-risco-ai-factory/02-fuentes.md) |
 
 ## Convención para nuevas entradas
 
