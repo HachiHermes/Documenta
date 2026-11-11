@@ -484,11 +484,9 @@ Solo después de un piloto satisfactorio:
 6. El siguiente paso sensato es medir una fábrica documental de bajo riesgo antes de automatizar código o producción.
 7. El éxito debe medirse por calidad, recuperación, coste y atención humana ahorrada, no por líneas de código, PR o volumen generado.
 
-## Fuentes
+## Sources
 
-El registro detallado de fuentes, evidencias y limitaciones está en [02-fuentes.md](02-fuentes.md).
-
-- [1] Eric Risco, vídeo y descripción: <https://www.youtube.com/watch?v=p6nnqerea7w&t=51s>
-- [2] Eric Risco, `rsc-harness`: <https://github.com/ericrisco/rsc-harness>
-- [3] OpenAI, “Harness engineering”: <https://openai.com/index/harness-engineering/>
-- [4] Stripe, “Minions”: <https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents>
+[1] https://www.youtube.com/watch?v=p6nnqerea7w&t=51s — Programar con agentes ya no basta: monta tu Software Factory
+[2] https://github.com/ericrisco/rsc-harness — rsc-harness
+[3] https://openai.com/index/harness-engineering — Harness engineering: leveraging Codex in an agent-first world
+[4] https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents — Minions: Stripe's one-shot, end-to-end coding agents
