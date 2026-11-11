@@ -180,8 +180,8 @@ La regla “si se hace más de una vez por semana, merece una fábrica” es una
 
 ### Texto evaluado
 
-> Automatización: sustituir conversaciones aisladas con agentes por procesos repetibles y auditables.  
-> Arquitectura: combinar memoria, planificación, construcción y revisores especializados.  
+> Automatización: sustituir conversaciones aisladas con agentes por procesos repetibles y auditables.
+> Arquitectura: combinar memoria, planificación, construcción y revisores especializados.
 > Control: reservar intervención humana según el riesgo.
 
 ### Veredicto global
